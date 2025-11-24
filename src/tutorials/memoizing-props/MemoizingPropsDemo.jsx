@@ -7,12 +7,6 @@ function MemoizingPropsDemo() {
 
   return (
     <div className="example-container">
-      <h2>Memoizing Props Anti-Pattern</h2>
-      <p className="description">
-        This tutorial demonstrates why memoizing props <strong>inside</strong> a child component 
-        is an anti-pattern that doesn't prevent rerenders.
-      </p>
-      
       <div className="tabs-container">
         <div className="tabs-header">
           <button
