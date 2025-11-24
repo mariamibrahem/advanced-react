@@ -1,45 +1,20 @@
-import { useState, useMemo, useCallback } from 'react'
-import MemoizedChildComponent from './MemoizedChildComponent'
+import { memo } from 'react'
+import ParentDemo from './ParentDemo'
+import ChildComponent from './ChildComponent'
+
+const MemoizedChild = memo(ChildComponent)
 
 function CorrectApproach() {
-  const [parentCounter, setParentCounter] = useState(0)
-  const [childData, setChildData] = useState({ value: 'Initial data' })
-
-  const handleClick = useCallback(() => {
-    setChildData({ value: `Updated at ${Date.now()}` })
-  }, [])
-
-  const memoizedData = useMemo(() => childData, [childData])
-
   return (
-    <div className="example-container">
-      <h3>✅ Correct: Use React.memo on Child</h3>
-      <p className="description">
-        Use <code>React.memo</code> on the child. Memoizing props in parent only helps when combined with <code>React.memo</code>.
-      </p>
-
-      <div className="demo-controls">
-        <button 
-          className="open-modal-btn"
-          onClick={() => setParentCounter(prev => prev + 1)}
-        >
-          Rerender Parent (Count: {parentCounter})
-        </button>
-        <button 
-          className="open-modal-btn"
-          onClick={handleClick}
-          style={{ marginLeft: '1rem' }}
-        >
-          Update Child Data
-        </button>
-      </div>
-
-      <MemoizedChildComponent 
-        data={memoizedData}
-        onClick={handleClick}
-        // parentCounter={parentCounter}
-      />
-    </div>
+    <ParentDemo
+      title="✅ Correct: React.memo + Memoized Props"
+      description="Use React.memo on the child and memoize props in the parent."
+      memoizeProps={true}
+      ChildComponent={MemoizedChild}
+      childTitle="✅ Child Component (Correct Approach)"
+      childMessage="✅ Only rerenders when props change"
+      childBorderColor="#28a745"
+    />
   )
 }
 

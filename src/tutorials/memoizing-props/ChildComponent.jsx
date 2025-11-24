@@ -1,8 +1,6 @@
 import { useRef, useEffect } from 'react'
 
-// Child component without React.memo
-// Even though parent memoizes props, this still rerenders when parent rerenders
-function ChildWithMemoizedProps({ data, onClick }) {
+function ChildComponent({ data, onClick, title, message, borderColor = '#dc3545' }) {
   const renderCount = useRef(0)
   renderCount.current += 1
 
@@ -11,13 +9,13 @@ function ChildWithMemoizedProps({ data, onClick }) {
   })
 
   return (
-    <div className="ref-component" style={{ marginTop: '2rem', padding: '1rem', border: '2px solid #dc3545' }}>
-      <h3>❌ Child Component (No React.memo)</h3>
+    <div className="ref-component" style={{ marginTop: '2rem', padding: '1rem', border: `2px solid ${borderColor}` }}>
+      <h3>{title}</h3>
       <div className="ref-info">
         <p><strong>Render Count:</strong> {renderCount.current}</p>
         <p><strong>Data Value:</strong> {data.value}</p>
-        <p style={{ color: '#dc3545', fontWeight: 'bold' }}>
-          ⚠️ Rerenders every time parent rerenders, even with memoized props
+        <p style={{ color: borderColor, fontWeight: 'bold' }}>
+          {message}
         </p>
         <button onClick={onClick} style={{ marginTop: '1rem' }}>
           Update Data
@@ -27,5 +25,5 @@ function ChildWithMemoizedProps({ data, onClick }) {
   )
 }
 
-export default ChildWithMemoizedProps
+export default ChildComponent
 
