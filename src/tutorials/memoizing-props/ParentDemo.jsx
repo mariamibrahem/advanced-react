@@ -50,9 +50,9 @@ function ParentDemo({
         data={data}
         onClick={handleClick}
         
-        title={childTitle}
-        message={childMessage}
-        borderColor={childBorderColor}
+        // title={childTitle}
+        // message={childMessage}
+        // borderColor={childBorderColor}
       />
     </div>
   )
