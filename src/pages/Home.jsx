@@ -1,10 +1,15 @@
 import { Link } from 'react-router-dom'
 import '../App.css'
+import { createElement } from 'react'
 
 function Home() {
+  console.log(createElement('h1', null, 'Advanced React Concepts'))
   return (
     <div className="home-container">
-      <h1>Advanced React Concepts</h1>
+      {/* <h1>Advanced React Concepts</h1> */}
+      {createElement('h1', null, 'Advanced React Concepts')}
+      {console.log(<p>Hello</p>)}
+
       <div className="tutorial-buttons">
         <Link to="/tut1" className="tutorial-button">
           Moving State Down
