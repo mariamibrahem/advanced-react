@@ -19,21 +19,21 @@ function ReconciliationDemo() {
         <p className="note-text">input type: {clicked ? 'text' : 'email'}</p>
 
         <div className="input-wrapper">
-          {clicked ? (
+          {/* {clicked ? (
             <input
               type="text"
               placeholder="Enter your name..."
               className="demo-input"
-            //   key={"123"}
+              key={"123"}
             />
           ) : (
             <input
               type="text"
               placeholder="Type your email..."
               className="demo-input"
-            //   key="12"
+              key="12"
             />
-          )}
+          )} */}
 
 
           {/* ///solution */}
@@ -42,6 +42,7 @@ function ReconciliationDemo() {
               placeholder="Enter your name..."
               className="demo-input"
             />:null}
+            
              {!clicked ?  <input
               type="text"
               placeholder="Type your email..."
