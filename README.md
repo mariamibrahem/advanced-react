@@ -17,14 +17,14 @@ This practical section serves to:
 
 This repository covers the following chapters from the Advanced React book:
 
-### Chapter 1: [Chapter Name]
+### Chapter 1: [Intro to re-renders]
 
 **Examples:**
 - **Moving State Down** - Demonstrates how moving state down the component tree prevents unnecessary re-renders of heavy components. Shows the performance difference between keeping state in a parent component (causing delayed modal appearance) versus moving state to a child component (allowing instant modal display).
 
 - **Rerender Myth** - Explores common misconceptions about React re-renders and how React efficiently manages component updates. Demonstrates that props are not the cause of rerenders.
 
-### Chapter 2: [Chapter Name]
+### Chapter 2: [Elements, children as props, and re-renders]
 
 **Examples:**
 - **Children Prop Pattern for Performance** - Shows how to use the children prop pattern to improve performance and prevent unnecessary re-renders in React applications. Demonstrates how passing components as children optimizes rendering.
@@ -33,7 +33,7 @@ This repository covers the following chapters from the Advanced React book:
 
 - **Dynamic Lists & Keys** - Covers best practices for rendering dynamic lists in React, including proper key usage and common pitfalls. Explains why keys are essential, why using index as a key is problematic, and how unique IDs solve the problem.
 
-### Chapter 5: [Chapter Name]
+### Chapter 5: [ Memoization ]
 
 **Examples:**
 - **Memoizing Props Anti-Pattern** - Explains anti-patterns related to memoizing props and demonstrates the correct approaches to optimize component performance. Shows that memoizing props in the parent doesn't prevent rerenders - you need `React.memo` on the child component.
