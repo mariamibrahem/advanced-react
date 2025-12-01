@@ -2,7 +2,6 @@
 
 This repository contains practical examples and demonstrations for the **Advanced React** book. This is a learning project created by **Mariam** for educational purposes and knowledge sharing.
 
-
 ## Introduction
 
 > 📹 [Watch the Introduction](https://drive.google.com/file/d/1FfVL1cgHB8pmwF_L1Jv2FkLjInmffoSo/view?usp=sharing)
@@ -18,23 +17,26 @@ This practical section serves to:
 
 This repository covers the following chapters from the Advanced React book:
 
-### 1. Moving State Down
-Demonstrates how moving state down the component tree prevents unnecessary re-renders of heavy components. Shows the performance difference between keeping state in a parent component (causing delayed modal appearance) versus moving state to a child component (allowing instant modal display).
+### Chapter 1: [Chapter Name]
 
-### 2. Rerender Myth
-Explores common misconceptions about React re-renders and how React efficiently manages component updates.
+**Examples:**
+- **Moving State Down** - Demonstrates how moving state down the component tree prevents unnecessary re-renders of heavy components. Shows the performance difference between keeping state in a parent component (causing delayed modal appearance) versus moving state to a child component (allowing instant modal display).
 
-### 3. Children Prop Pattern for Performance
-Shows how to use the children prop pattern to improve performance and prevent unnecessary re-renders in React applications.
+- **Rerender Myth** - Explores common misconceptions about React re-renders and how React efficiently manages component updates. Demonstrates that props are not the cause of rerenders.
 
-### 4. State Reset
-Illustrates how React handles state reset and reconciliation when component keys change.
+### Chapter 2: [Chapter Name]
 
-### 5. Dynamic Lists & Keys
-Covers best practices for rendering dynamic lists in React, including proper key usage and common pitfalls.
+**Examples:**
+- **Children Prop Pattern for Performance** - Shows how to use the children prop pattern to improve performance and prevent unnecessary re-renders in React applications. Demonstrates how passing components as children optimizes rendering.
 
-### 6. Memoizing Props Anti-Pattern
-Explains anti-patterns related to memoizing props and demonstrates the correct approaches to optimize component performance.
+- **State Reset** - Illustrates how React handles state reset and reconciliation when component keys change. Demonstrates React's reconciliation algorithm and how component type affects instance reuse.
+
+- **Dynamic Lists & Keys** - Covers best practices for rendering dynamic lists in React, including proper key usage and common pitfalls. Explains why keys are essential, why using index as a key is problematic, and how unique IDs solve the problem.
+
+### Chapter 5: [Chapter Name]
+
+**Examples:**
+- **Memoizing Props Anti-Pattern** - Explains anti-patterns related to memoizing props and demonstrates the correct approaches to optimize component performance. Shows that memoizing props in the parent doesn't prevent rerenders - you need `React.memo` on the child component.
 
 ## Getting Started
 
