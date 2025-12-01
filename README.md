@@ -2,6 +2,10 @@
 
 This repository contains practical examples and demonstrations for the **Advanced React** book. This is a learning project created by **Mariam** for educational purposes and knowledge sharing.
 
+## Introduction
+
+> 📹 [Watch the Introduction](https://drive.google.com/file/d/1FfVL1cgHB8pmwF_L1Jv2FkLjInmffoSo/view?usp=sharing)
+
 ## Purpose
 
 This practical section serves to:
@@ -9,18 +13,15 @@ This practical section serves to:
 - Demonstrate key concepts through interactive code examples
 - Share knowledge 
 
-This repository covers the following chapters from the Advanced React book:
 ## Chapters
 
+This repository covers the following chapters from the Advanced React book:
 
-In chapter one :
 ### 1. Moving State Down
 Demonstrates how moving state down the component tree prevents unnecessary re-renders of heavy components. Shows the performance difference between keeping state in a parent component (causing delayed modal appearance) versus moving state to a child component (allowing instant modal display).
 
 ### 2. Rerender Myth
 Explores common misconceptions about React re-renders and how React efficiently manages component updates.
-
-.................................................................
 
 ### 3. Children Prop Pattern for Performance
 Shows how to use the children prop pattern to improve performance and prevent unnecessary re-renders in React applications.
