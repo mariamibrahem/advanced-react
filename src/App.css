@@ -58,9 +58,10 @@
 
 .tutorial-buttons {
   display: flex;
+  flex-direction: column;
   gap: 1rem;
-  flex-wrap: wrap;
-  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 .tutorial-button {
@@ -72,6 +73,10 @@
   font-size: 1.1rem;
   font-weight: 500;
   transition: background-color 0.3s ease;
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+  display: block;
 }
 
 .tutorial-button:hover {
@@ -353,6 +358,15 @@
   margin: 0;
 }
 
+.note code {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+  font-family: 'Courier New', Courier, monospace;
+  font-style: normal;
+  font-size: 0.9em;
+}
+
 .explanation {
   margin-top: 2rem;
   padding: 1.5rem;
@@ -468,4 +482,88 @@
   border-radius: 4px;
   color: #004085;
   font-style: italic;
+}
+
+.code-example {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+}
+
+.code-example h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.code-block {
+  background-color: #282c34;
+  color: #abb2bf;
+  padding: 1.5rem;
+  border-radius: 6px;
+  overflow-x: auto;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0;
+  white-space: pre;
+}
+
+.code-image-container {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.code-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.run-button {
+  margin-top: 1rem;
+  padding: 0.75rem 2rem;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.run-button:hover {
+  background-color: #218838;
+}
+
+.output-container {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+.output-container h4 {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+  color: #333;
+}
+
+.output-content {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 4px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.9rem;
+}
+
+.output-line {
+  padding: 0.25rem 0;
+  color: #333;
 }
