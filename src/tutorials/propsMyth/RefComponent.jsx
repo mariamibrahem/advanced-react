@@ -1,9 +1,8 @@
-import { useRef, useEffect } from 'react'
 
 // Component that receives a ref as a prop
 // This component will track how many times it has rendered
 function RefComponent({ refValue }) {
-
+  console.log('Got the ref value', refValue.current)
   return (
     <div className="ref-component">
       <h3>Component Receiving Ref</h3>
