@@ -16,6 +16,9 @@ function Hoisting() {
         <Link to="/chapter10/hoisting/variable-hoisting" className="tutorial-button">
           Variable Hoisting
         </Link>
+        <Link to="/chapter10/hoisting/tdz" className="tutorial-button">
+          Temporal Dead Zone
+        </Link>
       </div>
       
       <Link to="/chapter10" className="back-button">
