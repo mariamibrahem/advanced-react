@@ -11,23 +11,17 @@ function Home() {
       {console.log(<p>Hello</p>)}
 
       <div className="tutorial-buttons">
-        <Link to="/tut1" className="tutorial-button">
-          Moving State Down
+        <Link to="/chapter1" className="tutorial-button">
+          Chapter 1: Intro to Rendering
         </Link>
-        <Link to="/tut2" className="tutorial-button">
-          Rerender Myth
+        <Link to="/chapter2" className="tutorial-button">
+          Chapter 2 & 6: Elements, children as props, re-renders, and Diffing & Reconciliation
         </Link>
-        <Link to="/tut3" className="tutorial-button">
-        Children Prop Pattern for Performance
+        <Link to="/chapter5" className="tutorial-button">
+          Chapter 5: Memoization
         </Link>
-        <Link to="/tut4" className="tutorial-button">
-          State Reset
-        </Link>
-        <Link to="/tut5" className="tutorial-button">
-          Dynamic Lists & Keys
-        </Link>
-        <Link to="/tut6" className="tutorial-button">
-          Memoizing Props Anti-Pattern
+        <Link to="/chapter10" className="tutorial-button">
+          Chapter 10: Closures
         </Link>
       </div>
     </div>
