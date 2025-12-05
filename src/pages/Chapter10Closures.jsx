@@ -19,6 +19,9 @@ function Chapter10Closures() {
         <Link to="/chapter10/variable-scopes" className="tutorial-button">
           Variable Scopes
         </Link>
+        <Link to="/chapter10/var" className="tutorial-button">
+          Var
+        </Link>
       </div>
       
       <Link to="/" className="back-button">
