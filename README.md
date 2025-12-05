@@ -38,6 +38,17 @@ This repository covers the following chapters from the Advanced React book:
 **Examples:**
 - **Memoizing Props Anti-Pattern** - Explains anti-patterns related to memoizing props and demonstrates the correct approaches to optimize component performance. Shows that memoizing props in the parent doesn't prevent rerenders - you need `React.memo` on the child component.
 
+### Chapter 10: [ Closures ]
+
+**Examples:**
+- **Hoisting** - Explores different types of hoisting in JavaScript, including functional hoisting, variable hoisting, and the Temporal Dead Zone (TDZ). Demonstrates how JavaScript handles variable and function declarations before code execution.
+
+- **Lexical Environment** - Covers the concept of lexical environment in JavaScript, explaining how variables and functions are scoped and accessed within their lexical context.
+
+- **Variable Scopes** - Demonstrates variable scopes in JavaScript, showing how different scoping rules affect variable accessibility and behavior throughout the code.
+
+- **Var** - Explains the behavior of the `var` keyword in JavaScript, including its lack of block scope, tolerance of redeclarations, and how variables can be declared below their use due to hoisting.
+
 ## Getting Started
 
 This project uses React with Vite. To get started:
