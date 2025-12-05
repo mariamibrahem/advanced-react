@@ -6,6 +6,8 @@ This repository contains practical examples and demonstrations for the **Advance
 
 > 📹 [Watch the Introduction](https://drive.google.com/file/d/1FfVL1cgHB8pmwF_L1Jv2FkLjInmffoSo/view?usp=sharing)
 
+> 📚 [Advanced React Book](https://drive.google.com/file/d/1FfVL1cgHB8pmwF_L1Jv2FkLjInmffoSo/view?usp=drive_link)
+
 ## Purpose
 
 This practical section serves to:
